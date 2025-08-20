@@ -1,22 +1,22 @@
 
 
-// const add =require("./add.js");
-// import add from "./add.js";
-// console.log(add(10,11));
-// console.log(add(1,5));
+const add =require("./add.js");
+import add from "./add.js";
+console.log(add(10,11));
+console.log(add(1,5));
 
 
-// const path=require("path");
+const path=require("path");
 
-// console.log("Directory name:",__dirname);
+console.log("Directory name:",__dirname);
 
-// console.log(path.basename(__dirname+"/myfile.txt"));
+console.log(path.basename(__dirname+"/myfile.txt"));
 
-// console.log("Full path:",path.resolve(__dirname,"myfile.txt"));
+console.log("Full path:",path.resolve(__dirname,"myfile.txt"));
 
-// const moment =require("moment");
+const moment =require("moment");
 
-// console.log("Date and Time:",moment().format("DD-MM-YYYY HH:MM:SS"));
+console.log("Date and Time:",moment().format("DD-MM-YYYY HH:MM:SS"));
 
 
 const fs=require("fs");
