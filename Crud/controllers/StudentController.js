@@ -17,4 +17,3 @@ exports.update = (req,res) =>{
 exports.delete = (req,res) =>{
     res.send(`data  deleted ${req.params.id}\n`);
 };
-
