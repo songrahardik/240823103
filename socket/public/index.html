@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="container">
+        <div class="chat-wrapper">
+            <div class="chat-header">
+                <div class="header-content">
+                    <div class="logo-container">
+                        <div class="logo-circle"></div>
+                        <h1>Chat Room</h1>
+                    </div>
+                    <div class="online-status">
+                        <span class="status-dot"></span>
+                        <span id="onlineCount">0 online</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-body">
+                <div id="messages" class="messages-container"></div>
+                <div id="typingIndicator" class="typing-indicator">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="typing-text"></span>
+                </div>
+            </div>
+
+            <div class="chat-footer">
+                <form id="messageForm" class="message-form">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="messageInput" 
+                            placeholder="Type your message..." 
+                            autocomplete="off"
+                            required
+                        >
+                        <button type="submit" class="send-button">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
